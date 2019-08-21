@@ -3,7 +3,7 @@
 # 如何使用？
 	1.clone项目到本地，使用Android Studio打开，编译运行
 	2.由于后台接口已停止运营，需自行添加模拟数据
-	3.如需查看接口文档，请添加下方QQ群联系群主
+	3.如需查看接口文档/UI设计等，请添加下方QQ群联系群主
 # 项目结构
 	mpchartlib--------统计图
 	prolib----------第三方库集成，如：Fragmentation、Mosby(MVP)、Banner
