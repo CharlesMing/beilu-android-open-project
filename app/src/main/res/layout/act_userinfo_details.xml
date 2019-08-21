@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.user.UserInfoDetailsAct">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="2dp"
+        app:menu="@menu/menu_finsh" />
+
+    <EditText
+        android:id="@+id/et_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_publishedit"
+        android:gravity="top"
+        android:hint="修改个人信息"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorGray"
+        android:textCursorDrawable="@drawable/color_cursor_shape"
+        android:textSize="@dimen/text_size_16"
+      />
+
+
+
+
+
+
+
+</LinearLayout>

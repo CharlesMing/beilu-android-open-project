@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/web_view_background_color"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/action_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/web_view_background_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_previous_page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_arrow_left"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:minWidth="65dp"
+            android:paddingLeft="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14"
+            tools:text="平板哑铃飞鸟" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_current_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/tv_total_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#5C5C5C"
+                android:textSize="@dimen/text_size_14"
+                tools:text="/30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_arrow_right_white"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:minWidth="65dp"
+            android:paddingRight="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14"
+            tools:text="蝴蝶机飞鸟" />
+
+
+    </RelativeLayout>
+</LinearLayout>

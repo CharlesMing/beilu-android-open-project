@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "API_HOST", "\"https://cqsanchaji.com/\"")
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            buildConfigField("boolean", "LOG_REQUEST", "false")
+        }
+
+        debug {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            buildConfigField("String", "API_HOST", "\"http://192.168.0.3:9000/\"")
+            buildConfigField("String", "API_HOST", "\"https://cqsanchaji.com/\"")
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            buildConfigField("boolean", "LOG_REQUEST", "true")
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api rootProject.supportAppcompat_v7
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api rootProject.loggerOr
+    api rootProject.retrofit2
+    api rootProject.rxJava
+    api rootProject.rxAndroid
+    api rootProject.gson
+    api rootProject.retrofitAdapter
+    api rootProject.cardview
+    api rootProject.design
+    api rootProject.imageZoom
+    api rootProject.glide
+    api rootProject.luban
+    api rootProject.ucrop
+    api rootProject.immersionbar
+    api 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta02'
+    api 'com.android.support:multidex:1.0.3'
+    //友盟
+    api 'com.umeng.umsdk:analytics:8.0.0'
+    api 'com.umeng.umsdk:common:2.0.0'
+}

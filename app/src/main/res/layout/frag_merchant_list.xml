@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="12dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back" />
+
+        <com.scj.beilu.app.widget.ClearEditText
+            android:id="@+id/et_search_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="输入商家名、地点"
+            android:imeActionId="@integer/search_id"
+            android:imeActionLabel="@string/txt_search"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+    <com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableAutoLoadMore="true">
+
+        <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewStub
+                android:id="@+id/view_load_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/layout_loading_net_error" />
+
+            <ViewStub
+                android:id="@+id/view_stu_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout="@layout/layout_load_empty" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_merchant_content" />
+
+        </FrameLayout>
+
+
+        <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:toolbar_title="门店图片" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_merchant_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_merchant_nav"
+            android:layout_width="match_parent"
+            app:tabMode="scrollable"
+            android:layout_height="45dp"
+            app:tabIndicatorColor="@android:color/transparent" />
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

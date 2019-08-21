@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="22dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_news_author_name"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/cardView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="欢迎瑞秋女神归队神归队神归队神归队神归队神归队神归队神归队神归队神归队！不负众线杀了,前阵子97年的中国妹子用腹肌、翘臀" />
+
+    <TextView
+        android:id="@+id/tv_news_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="每日经济新闻 .  10283次阅读"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_author_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_author_name" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="101dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_news_img"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            tools:background="@color/colorGray" />
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

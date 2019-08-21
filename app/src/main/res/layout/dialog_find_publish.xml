@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableBottom="@drawable/shape_dialogline"
+        android:drawablePadding="-6dp"
+        android:gravity="center"
+        android:text="发布一条新动态"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="发布这样的内容，会有更多赞"
+        android:textColor="#999"
+        android:textSize="@dimen/text_size_15" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_publishway_true"
+            android:drawablePadding="6dp"
+            android:text="记录健康"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_true"
+            android:drawablePadding="6dp"
+            android:text="抒发心情"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_true"
+            android:drawablePadding="6dp"
+            android:text="交流爱好"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_publishway_true"
+            android:drawablePadding="6dp"
+            android:text="谈论观点"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_true"
+            android:drawablePadding="6dp"
+            android:text="发高清图"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="发布以下内容会被删贴甚至封号"
+        android:textColor="#999"
+        android:textSize="@dimen/text_size_15" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_publishway_false"
+            android:drawablePadding="6dp"
+            android:text="广告"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_false"
+            android:drawablePadding="6dp"
+            android:text="色情"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_false"
+            android:drawablePadding="6dp"
+            android:text="杠精"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_publishway_false"
+            android:drawablePadding="6dp"
+            android:text="盗图"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_20"
+            android:drawableLeft="@drawable/ic_publishway_false"
+            android:drawablePadding="6dp"
+            android:text="辱骂"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_knowbutton"
+        android:gravity="center"
+        android:text="我知道了,不再提示"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

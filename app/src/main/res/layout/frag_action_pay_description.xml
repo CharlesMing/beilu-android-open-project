@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_action_lock_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#123232" />
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="10dp"
+            android:background="#233442" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/shape_circle_blue"
+            android:drawablePadding="11dp"
+            android:paddingLeft="15dp"
+            android:text="260+个健身房常用经典动作 全录制"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/shape_circle_blue"
+            android:drawablePadding="11dp"
+            android:paddingLeft="15dp"
+            android:text="动作部分分类明确、方便易看"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="24dp"
+            android:drawableLeft="@drawable/shape_circle_blue"
+            android:drawablePadding="11dp"
+            android:paddingLeft="15dp"
+            android:text="分享到朋友圈20位微信好友扫码注册即解锁全部动作"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="15dp"
+                android:background="#283" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="分享获取动作"
+                android:textColor="#636163"
+                android:textSize="@dimen/text_size_13" />
+
+            <TextView
+                android:id="@+id/tv_action_price_pay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_btn_lock"
+                android:gravity="center"
+                android:textColor="#DECB87"
+                android:textSize="@dimen/text_size_16"
+                tools:text="¥ 29.99解锁全部动作" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

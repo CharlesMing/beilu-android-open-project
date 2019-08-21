@@ -1,0 +1,25 @@
+package com.scj.beilu.app.mvp.store.bean;
+
+import com.scj.beilu.app.mvp.common.bean.PageBean;
+import com.scj.beilu.app.mvp.common.bean.ResultMsgBean;
+
+/**
+ * @author Mingxun
+ * @time on 2019/3/26 03:37
+ */
+public class GoodsListResultBean extends ResultMsgBean {
+
+    /**
+     * page : {"currentPage":1,"list":[{"productId":1,"productName":"虽然他还是分公司","productSynopsis":null,"productOriginalPrice":"20.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":37,"productName":"短袖衣","productSynopsis":null,"productOriginalPrice":"50.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":40,"productName":"短卫衣","productSynopsis":null,"productOriginalPrice":"451.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":41,"productName":"蛋白粉","productSynopsis":null,"productOriginalPrice":"11.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":43,"productName":"衬衣","productSynopsis":null,"productOriginalPrice":"44.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":44,"productName":"粥","productSynopsis":null,"productOriginalPrice":"55.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":45,"productName":"卫衣","productSynopsis":null,"productOriginalPrice":"45.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":46,"productName":"毛衣","productSynopsis":null,"productOriginalPrice":"55.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":99,"productName":"ghahksssdf","productSynopsis":null,"productOriginalPrice":"50.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.os s-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"},{"productId":100,"productName":"massive","productSynopsis":null,"productOriginalPrice":"8000000.00","productDiscountPrice":"0.01","productCateId":0,"productFormat":[],"productPicOriginalAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg","productPicCompressionAddr":"https://beilutest.oss-cn-hangzhou.aliyuncs.com/product/pic/Zip5e833f34-aec9-4b54-afb9-22413fd95ad120190379164422.jpg"}],"startCount":0,"nextPage":1,"totalCount":0}
+     */
+
+    private PageBean<GoodsInfoBean> page;
+
+    public PageBean<GoodsInfoBean> getPage() {
+        return page;
+    }
+
+    public void setPage(PageBean<GoodsInfoBean> page) {
+        this.page = page;
+    }
+}

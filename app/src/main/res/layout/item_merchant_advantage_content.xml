@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_advantage_course"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@drawable/shape_search_tag_bg"
+    android:gravity="center"
+    tools:text="体态调整">
+
+</TextView>

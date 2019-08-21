@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_goods_info"
+    android:layout_width="150dp"
+    android:layout_height="191dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_home_page_goods_img"
+            android:layout_width="150dp"
+            android:layout_height="114dp"
+            tools:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_home_page_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            tools:text="健身代餐主食农家红薯条3袋" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_home_page_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF93345"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"
+                tools:text="￥99" />
+
+            <TextView
+                android:id="@+id/tv_home_page_goods_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffd8d8d8"
+                android:textSize="@dimen/text_size_12"
+                tools:text="原价¥329" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

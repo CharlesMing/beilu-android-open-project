@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="30dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                app:divider="@drawable/item_divider"
+                app:dividerPadding="20dp"
+                app:showDividers="middle">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/iv_merchant_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/merchant_pic_height"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="#4B000000" />
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="35dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="15dp"
+                        app:contentPaddingLeft="25dp"
+                        app:contentPaddingRight="25dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_merchant_img">
+
+                        <TextView
+                            android:id="@+id/tv_merchant_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:drawableLeft="@drawable/ic_find_phone"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="联系商家"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_merchant_start_nav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:drawableLeft="@drawable/ic_find_address"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="导航商家"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_12" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp"
+                        app:contentPaddingBottom="18dp"
+                        app:contentPaddingLeft="12dp"
+                        app:contentPaddingRight="12dp"
+                        app:contentPaddingTop="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:id="@+id/tv_merchant_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_20"
+                            tools:text="威尔士健身（爱情海店）" />
+
+
+                        <TextView
+                            android:id="@+id/tv_merchant_area_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_size_12"
+                            tools:text="门店面积 2000㎡ | 营业时间：10:00-22:00" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ic_address_bg"
+                        android:orientation="vertical"
+                        android:paddingLeft="14dp"
+                        android:paddingTop="17dp"
+                        android:paddingRight="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商家详细地址"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_merchant_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="17dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_14"
+                            tools:text="重庆市江北区观音桥东环路红鼎国际名路红鼎国际名苑C座130" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_merchant_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/shape_circle_transparent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_merchant_smaill_img_num" />
+
+                        <TextView
+                            android:id="@+id/tv_merchant_img_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            tools:text="123"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_merchant_info_list"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_merchant_info_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="商家介绍"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_20" />
+
+                    <TextView
+                        android:id="@+id/tv_merchant_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="20dp"
+                        tools:text="20多年来的打造，已让众多人士成为了粉丝，也让诸多人尝试着踏入健身的行列。Will's致力于成为社区性Will's已将会所铺设到不少生活社区附近。" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <com.scj.beilu.app.widget.AppToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_back_white"
+                app:showBack="false"
+                app:toolbar_background="@android:color/transparent"
+                app:toolbar_title=" " />
+        </android.support.design.widget.AppBarLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

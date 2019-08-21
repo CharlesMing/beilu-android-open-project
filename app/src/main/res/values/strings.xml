@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">北鹿</string>
+    <string name="permission_camera_rationale">需要相机权限才能显示相机预览。</string>
+    <string name="permission_phone_state_rationale">需要读取手机设备权限</string>
+    <string name="permission_call_phone">需要设置拨打电话权限，才能使用哦</string>
+    <string name="permission_call_file">需要读写文件权限</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_store">课程</string>
+    <string name="nav_find">发现</string>
+    <string name="nav_me">我的</string>
+    <string name="nav_news">资讯</string>
+    <string name="button_allow" translatable="false">允许</string>
+    <string name="button_deny">拒绝</string>
+    <string name="button_sure">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_update">更新</string>
+    <array name="me_nav_title">
+        <item>消息中心</item>
+        <item>我的订单</item>
+        <item>成长记录</item>
+        <item>添加地址</item>
+        <item>关于我们</item>
+    </array>
+    <string name="msg_send_hint">短信验证码已发送至 +86 %1$s</string>
+    <string name="countdown_hint">没收到验证码？%1$s 后可重新发送</string>
+    <string name="countdown_hint1">没收到验证码？0s 后可重新发送</string>
+    <string name="txt_news_item_source">%1$s&#12288; .&#12288; &#12288; %2$s次阅读</string>
+    <string name="txt_reply_touser">回复 %1$s :</string>
+    <string name="txt_reply_content">%1$s回复%2$s&#12288;:%3$s</string>
+    <string name="txt_search">搜索</string>
+    <integer name="search_id">100</integer>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="home_course_time_browse">%1$s节课 / %2$s次学习</string>
+    <string name="txt_rmb">¥%1$s</string>
+    <string name="txt_start_play">立即播放</string>
+
+    <string name="app_tip" translatable="false">提示</string>
+    <string name="txt_sales_num">已售%d</string>
+    <string name="txt_cart_select">已选（%d）</string>
+    <string name="txt_copy">复制</string>
+    <string name="txt_consignee">收货人：%s</string>
+    <string name="txt_consignee_address">收货地址：%s</string>
+    <string name="txt_goods_num">x%d</string>
+    <string name="txt_item_reply_content">%1$s&#12288;&#12288;|&#12288;&#12288;%2$s</string>
+    <string name="txt_item_comment_tip">%1$s&#12288;&#12288;&#12288;&#12288;%2$s</string>
+    <string name="txt_merchant_area_time">门店面积 %1$s&#12288;&#12288; | &#12288;&#12288; 营业时间：%2$s-%3$s</string>
+    <string name="txt_user_id">ID: %1$s&#12288;&#12288;被赞次数:%2$s</string>
+    <string name="action_pay_price">¥ %1$s解锁全部动作</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_pre_view_type"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:background="@drawable/tab_photo_preview_background_selector"
+    android:gravity="center"
+    android:textColor="@color/tab_merchant_pic_text_color"
+    tools:text="12312121212" />
+

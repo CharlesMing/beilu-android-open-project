@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="基本信息"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_val_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_small_clock"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color5D5D5D"
+                android:textSize="@dimen/text_size_12"
+                tools:text="开店：10:00" />
+
+            <TextView
+                android:id="@+id/tv_val_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_small_clock"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color5D5D5D"
+                android:textSize="@dimen/text_size_12"
+                tools:text="关店：22:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_val_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_open_time"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color5D5D5D"
+                android:textSize="@dimen/text_size_12"
+                tools:text="开业：2017-08" />
+
+            <TextView
+                android:id="@+id/tv_val_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_fitment_time"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color5D5D5D"
+                android:textSize="@dimen/text_size_12"
+                tools:text="装修：2017-03" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

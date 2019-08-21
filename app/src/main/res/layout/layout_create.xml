@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="25dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/tv_publish"
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_publish_selector"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/my_album_btn_text_color" />
+</FrameLayout>

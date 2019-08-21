@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppToolbar">
+        <attr name="showBack" format="boolean" />
+        <attr name="menu" format="reference" />
+        <attr name="toolbar_title" format="string" />
+        <attr name="toolbar_title_text_color" format="color|reference" />
+        <attr name="toolbar_title_text_size" format="dimension" />
+        <attr name="toolbar_background" format="reference|color" />
+        <attr name="toolbar_show_elevation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemLayout">
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="right_text_hint" format="string" />
+    </declare-styleable>
+
+    <!--可展开textview-->
+    <declare-styleable name="FolderTextView">
+        <attr name="foldText" format="string" />
+        <attr name="unFoldText" format="string" />
+        <attr name="foldLine" format="integer" />
+        <attr name="tailTextColor" format="color" />
+        <attr name="canFoldAgain" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="switchButton_move" format="boolean" />
+        <attr name="switchButton_gradient" format="boolean" />
+        <attr name="switchButton_selectedColor" format="color" />
+        <attr name="switchButton_unSelectedColor" format="color" />
+        <attr name="switchButton_color" format="color" />
+        <attr name="switchButton_padding" format="dimension" />
+        <attr name="switchButton_duration" format="integer" />
+        <attr name="switchButton_springback" format="integer" />
+    </declare-styleable>
+
+    <!--普通卷尺控件-->
+    <declare-styleable name="RuleView">
+        <!--背景色-->
+        <attr name="zjun_bgColor" />
+        <!--刻度颜色-->
+        <attr name="zjun_gradationColor" />
+        <!--短刻度线宽度-->
+        <attr name="gv_shortLineWidth" format="reference|dimension" />
+        <!--长刻度线宽度-->
+        <attr name="gv_longLineWidth" format="reference|dimension" />
+        <!--短刻度长度-->
+        <attr name="gv_shortGradationLen" format="reference|dimension" />
+        <!--长刻度长度-->
+        <attr name="gv_longGradationLen" format="reference|dimension" />
+        <!--刻度字体颜色-->
+        <attr name="zjun_textColor" />
+        <!--刻度字体大小-->
+        <attr name="zjun_textSize" />
+        <!--中间指针线颜色-->
+        <attr name="zjun_indicatorLineColor" />
+        <!--中间指针线宽度-->
+        <attr name="zjun_indicatorLineWidth" />
+        <!--中间指针线长度-->
+        <attr name="gv_indicatorLineLen" format="reference|dimension" />
+        <!--最小值-->
+        <attr name="gv_minValue" format="reference|float" />
+        <!--最大值-->
+        <attr name="gv_maxValue" format="reference|float" />
+        <!--当前值-->
+        <attr name="gv_currentValue" format="reference|float" />
+        <!--刻度最小单位-->
+        <attr name="gv_gradationUnit" format="reference|float" />
+        <!--需要绘制数值之间的最小单位个数-->
+        <attr name="gv_numberPerCount" format="reference|integer" />
+        <!--刻度间距离-->
+        <attr name="gv_gradationGap" format="reference|dimension" />
+        <!--刻度与文字的间距-->
+        <attr name="gv_gradationNumberGap" format="reference|dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PercentageRectCardView">
+        <attr name="height_percentage" format="float|integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DragScrollDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

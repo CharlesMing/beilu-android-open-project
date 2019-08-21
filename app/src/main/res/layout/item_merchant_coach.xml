@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_coach_parent"
+    android:layout_width="135dp"
+    android:layout_height="175dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="7dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:contentPaddingBottom="23dp"
+    app:contentPaddingLeft="13dp"
+    app:contentPaddingRight="13dp"
+    app:contentPaddingTop="15dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_merchant_coach_avatar"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/ic_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_coach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_merchant_coach_avatar"
+            tools:text="张明巡" />
+
+        <TextView
+            android:id="@+id/tv_coach_advantage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coach_name"
+            tools:text="擅长课程：康复训1练体态调整、体态调整、增肌、体态调整、增肌" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

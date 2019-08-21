@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="12dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_news_author_avatar"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        tools:background="@drawable/ic_default_avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_news_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_news_author_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_news_author_avatar"
+        tools:text="威尔士健身" />
+
+    <TextView
+        android:id="@+id/tv_news_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_author_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_author_name"
+        tools:text="腾讯旗下体育健身频道" />
+
+    <TextView
+        android:id="@+id/tv_news_fans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintStart_toStartOf="@+id/tv_news_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news_content"
+        tools:text="4000万粉丝" />
+
+    <TextView
+        android:id="@+id/tv_news_recommend_attention_status"
+        style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/attention_selector"
+        android:gravity="center"
+        android:text="+ 关注"
+        android:textColor="@color/attention_txt_color"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<item name="hierarchy" type="id"></item>-->
+    <!--<item name="isexpand" type="id"></item>-->
+    <item name="toolbar" type="id" />
+    <item name="refresh_layout" type="id" />
+    <item name="recycler_view_id" type="id" />
+    <item name="view_load_error" type="id" />
+    <item name="imageView" type="id" />
+    <item name="id_uc_news_header_pager" type="id" />
+    <item name="item_news_view_id" type="id" />
+    <item name="home_nav_button" type="id" />
+    <item name="address_item_content" type="id" />
+</resources>

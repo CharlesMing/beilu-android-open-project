@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_scorll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:background="@drawable/ic_top_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_app_logo"
+                app:layout_constraintBottom_toTopOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_photo" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="165dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_photo"
+                tools:text="北  鹿" />
+
+            <TextView
+                android:id="@+id/tv_version_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="当前版本号1.0"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_box"
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPaddingBottom="18dp"
+                app:contentPaddingLeft="24dp"
+                app:contentPaddingRight="24dp"
+                app:contentPaddingTop="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_version_num">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_version_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/text_size_16"
+                        tools:text="北鹿运动，旗下官方出品。" />
+
+
+                    <TextView
+                        android:id="@+id/tv_version_dec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="#ff999999"
+                        android:textSize="14sp"
+                        tools:text="完整记录个人训练数据，丰富有趣的丰富有趣的体系，见证你的健身历程，让训练不再枯燥，激发自己的无穷动力。完整记录个人训练数据" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                app:divider="@drawable/item_divider"
+                app:dividerPadding="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_box"
+                app:showDividers="end|middle">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="官网"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_web"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#F1C847"
+                        android:textSize="@dimen/text_size_16"
+                        tools:text="www.beilu.com" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="合作邮箱"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#F1C847"
+                        android:textSize="@dimen/text_size_16"
+                        tools:text="beilu@8993.com" />
+                </RelativeLayout>
+
+                <com.scj.beilu.app.widget.ItemLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:left_text="求好评"
+                    app:right_text_hint="" />
+
+                <com.scj.beilu.app.widget.ItemLayout
+                    android:id="@+id/il_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:left_text="意见反馈"
+                    app:right_text_hint="" />
+
+                <com.scj.beilu.app.widget.ItemLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:left_text="隐私政策"
+                    app:right_text_hint="" />
+
+                <com.scj.beilu.app.widget.ItemLayout
+                    android:id="@+id/item_user_agreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:left_text="用户协议"
+                    app:right_text_hint="" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_back_white"
+        app:showBack="false"
+        app:toolbar_background="#00000000"
+        app:toolbar_title=" " />
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog_cancel"
+        android:gravity="center"
+        android:text="不再关注"
+        android:textColor="#ffea4e3d"
+        android:textSize="@dimen/text_size_19" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_dialog_cancel"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/dialog_Text"
+        android:textSize="@dimen/text_size_19" />
+
+
+</LinearLayout>

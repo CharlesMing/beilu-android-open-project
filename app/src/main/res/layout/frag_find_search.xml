@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="5dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.scj.beilu.app.widget.ClearEditText
+            android:id="@+id/et_search_content"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:gravity="center_vertical"
+            android:hint="搜索动态"
+            android:imeActionId="@integer/search_id"
+            android:imeActionLabel="@string/txt_search"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/colorGray"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_15" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_search_history_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="历史搜索"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_16" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_search_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="120dp"
+                app:spanCount="2"
+                tools:listitem="@layout/item_search_hot" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户推荐"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_16" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/find_search_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_find_attention" />
+        </LinearLayout>
+
+        <com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            app:srlEnableAutoLoadMore="true"
+            app:srlEnableRefresh="false">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ViewStub
+                    android:id="@+id/view_stu_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout="@layout/layout_loading" />
+
+                <include layout="@layout/layout_load_empty" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            </FrameLayout>
+
+            <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

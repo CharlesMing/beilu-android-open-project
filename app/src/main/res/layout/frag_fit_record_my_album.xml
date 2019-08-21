@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:toolbar_title="我的健身相册" />
+
+
+    <TextView
+        android:id="@+id/tv_picture_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text="请选择2张照片"
+        android:textColor="#ff000000"
+        android:textSize="19sp"
+        android:visibility="gone" />
+
+    <com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_fit_record_my_album" />
+
+        <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_add_picture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:foreground="@drawable/btn_borderless_mtrl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_small_camera"
+                android:drawablePadding="9dp"
+                android:text="添加照片"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_custom_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/my_album_btn_selector"
+            android:enabled="true"
+            android:foreground="@drawable/btn_borderless_mtrl"
+            android:gravity="center"
+            android:text="制作对比照"
+            android:textColor="@color/my_album_btn_text_color"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</LinearLayout>

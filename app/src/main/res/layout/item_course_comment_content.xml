@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp"
+    android:paddingTop="17dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="17dp">
+
+    <ImageView
+        android:id="@+id/iv_course_comment_avatar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_default_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_course_comment_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintStart_toEndOf="@+id/iv_course_comment_avatar"
+        app:layout_constraintTop_toTopOf="@+id/iv_course_comment_avatar"
+        tools:text="孤岛的鲸鱼" />
+
+    <TextView
+        android:id="@+id/tv_course_comment_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/iv_course_comment_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_comment_user"
+        tools:text="你们都好厉害！我就不行了" />
+
+
+    <TextView
+        android:id="@+id/tv_course_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGray"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_course_comment_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_comment_content"
+        tools:text="2018-12-25" />
+</android.support.constraint.ConstraintLayout>

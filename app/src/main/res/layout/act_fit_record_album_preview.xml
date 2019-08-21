@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mx.pro.lib.album.internal.ui.widget.PreviewViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:menu="@menu/menu_img_del"
+        app:navigationIcon="@drawable/ic_back_white"
+        app:showBack="false"
+        app:toolbar_background="@android:color/transparent"
+        app:toolbar_title_text_color="@android:color/white"
+        tools:toolbar_title="2018-08-2" />
+</FrameLayout>

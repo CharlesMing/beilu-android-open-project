@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="2dp"
+        app:toolbar_title="编辑个人资料" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:divider="@drawable/item_divider"
+        app:dividerPadding="20dp"
+        app:showDividers="end|middle">
+
+        <RelativeLayout
+            android:id="@+id/rl_photo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_item_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_item_arrow_right" />
+
+            <ImageView
+                android:id="@+id/iv_info_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_arrow_right"
+                tools:background="@color/colorGray" />
+        </RelativeLayout>
+
+        <com.scj.beilu.app.widget.ItemLayout
+            android:id="@+id/il_name"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:left_text="昵称"
+            app:right_text_hint="输入昵称" />
+
+        <com.scj.beilu.app.widget.ItemLayout
+            android:id="@+id/il_sex"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:left_text="性别"
+            app:right_text_hint="输入性别" />
+
+        <com.scj.beilu.app.widget.ItemLayout
+            android:id="@+id/il_birth"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:left_text="生日"
+            app:right_text_hint="输入生日" />
+
+        <com.scj.beilu.app.widget.ItemLayout
+            android:id="@+id/il_place"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:left_text="所在地"
+            app:right_text_hint="输入所在地" />
+
+        <com.scj.beilu.app.widget.ItemLayout
+            android:id="@+id/il_signature"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:left_text="个性签名"
+            app:right_text_hint="输入个性签名" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

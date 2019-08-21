@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tab_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/findtab_indicator_selector"
+        android:drawablePadding="-8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/tab_color_selector"
+        android:textSize="@dimen/text_size_18"
+        tools:text="系统" />
+</LinearLayout>

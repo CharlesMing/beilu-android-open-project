@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableAutoLoadMore="true"
+    app:srlEnableLoadMore="true">
+
+    <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@+id/view_stu_not_attention_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_news_not_attention_list" />
+
+        <ViewStub
+            android:id="@+id/view_stu_attention_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_news_attentioned_list" />
+    </FrameLayout>
+
+    <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>

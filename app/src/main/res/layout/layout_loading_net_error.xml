@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容加载失败，请检查网络"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12" />
+
+    <Button
+        android:id="@+id/btn_restart_load"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/btn_borderless_mtrl"
+        android:text="重新加载" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_user_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/ic_default_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_user_avatar"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        android:text="Charlie" />
+
+    <TextView
+        android:id="@+id/tv_item_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/attention_selector"
+        android:gravity="center"
+        android:text="+ 关注"
+        android:textColor="@color/attention_txt_color"
+        android:textSize="13sp" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.SquareCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/iv_fit_record_my_album"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="#329029" />
+
+        <ImageView
+            android:id="@+id/iv_album_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/img_selector"
+            android:visibility="gone" />
+    </com.scj.beilu.app.widget.SquareCardView>
+
+    <TextView
+        android:id="@+id/tv_fit_record_my_album_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="2010-02-16"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12" />
+</LinearLayout>

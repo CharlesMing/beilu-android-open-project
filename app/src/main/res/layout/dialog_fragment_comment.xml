@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="15dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="说点什么呗..."
+        android:textColor="#ff999999"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/image_btn_photo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/edit_comment"
+        android:layout_alignLeft="@id/edit_comment"
+        android:tint="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/image_btn_at"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/edit_comment"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/image_btn_photo"
+        android:tint="@color/colorGray" />
+
+    <ImageView
+        android:id="@+id/image_btn_comment_send"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/edit_comment"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:tint="@color/colorAccent"
+       />
+</RelativeLayout>

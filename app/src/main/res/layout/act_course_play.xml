@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:id="@+id/course_detail_player"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_course_player"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout_course"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabMode="fixed">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TabLayout>
+    </android.support.v4.view.ViewPager>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_send_comment"
+            style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:enabled="false"
+            android:text="发布"
+            android:textColor="@color/btn_comment_send_text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/et_comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_comment_edit_bg"
+            android:hint="说点什么呗~"
+            android:maxHeight="120dp"
+            android:minHeight="35dp"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:textSize="@dimen/text_size_16"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_send_comment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

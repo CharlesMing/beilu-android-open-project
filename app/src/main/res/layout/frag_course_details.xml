@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableLoadMore="false"
+    app:srlHeaderInsetStart="60dp">
+
+    <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:contentScrim="@android:color/white"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/iv_course_background_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="210dp"
+                                tools:background="#00A342"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/ll_course_free_play_video"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/btn_shape_course_yellow"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="8dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingBottom="5dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_play_small" />
+
+                                    <TextView
+                                        android:id="@+id/tv_course_free_play"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/text_size_12"
+                                        tools:text="首节免费" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_course_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/text_size_16"
+                                    tools:text="早功训练课-女生必备" />
+
+                                <TextView
+                                    android:id="@+id/tv_course_small_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="@color/colorE6E6E6"
+                                    android:textSize="13sp"
+                                    tools:text="塑造完美身材的必备宝典" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_course_total_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorF6364A"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    tools:text="¥299" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/shape_system_msg_bg"
+                                    android:foreground="@drawable/btn_borderless_mtrl"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="打包购买"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_course_desc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:textColor="@color/colorGray"
+                                android:textSize="@dimen/text_size_12"
+                                tools:text="40门课程+专业老师指导+体系化指导训练+快速减脂" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_course_single"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:background="@drawable/bg_separately"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/ic_small_people_"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:text="首节免费  单节购买"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/text_size_13" />
+
+                                <TextView
+                                    android:id="@+id/tv_course_unit_price"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/colorFD9629"
+                                    android:textSize="@dimen/text_size_13"
+                                    tools:text="¥23" />
+
+                                <TextView
+                                    android:id="@+id/tv_course_buy_single"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/btn_shape_buy"
+                                    android:text="立即购买"
+                                    android:textColor="@color/colorFD9629"
+                                    android:textSize="@dimen/text_size_12" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_course_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="10sp"
+                                    tools:text="已更新：18期" />
+
+                                <TextView
+                                    android:id="@+id/tv_course_buy_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="10sp"
+                                    tools:text="购买人：1025人" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.scj.beilu.app.widget.AppToolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        app:contentInsetLeft="0dp"
+                        app:contentInsetStart="0dp"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@drawable/ic_back_white"
+                        app:showBack="false"
+                        app:toolbar_background="@android:color/transparent"
+                        app:toolbar_title=" ">
+
+                        <LinearLayout
+                            android:id="@+id/ll_course_start_play"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginRight="50dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+
+                            <TextView
+                                android:id="@+id/tv_top_start_play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_top_start_play"
+                                android:drawableLeft="@drawable/ic_top_start_play"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="@string/txt_start_play"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </com.scj.beilu.app.widget.AppToolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabMode="fixed">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.TabLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager_course_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shape_shadow_up" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_send_comment"
+                style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:enabled="false"
+                android:text="发布"
+                android:textColor="@color/btn_comment_send_text_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/et_comment_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/shape_comment_edit_bg"
+                android:hint="说点什么呗~"
+                android:maxHeight="120dp"
+                android:minHeight="35dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_send_comment"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_course_buy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_course_consult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/white"
+                android:foreground="@drawable/btn_borderless_mtrl"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/ic_consult"
+                    android:drawableLeft="@drawable/ic_consult"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="咨询"
+                    android:textColor="@color/color7F7F81" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_course_buy_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/my_album_normal"
+                android:foreground="@drawable/btn_borderless_mtrl"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_14"
+                tools:text="学习所有课程 ¥699" />
+        </LinearLayout>
+    </LinearLayout>
+</com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>

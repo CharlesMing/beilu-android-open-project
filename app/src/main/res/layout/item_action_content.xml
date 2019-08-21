@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/frag_action_list">
+
+    <TextView
+        android:id="@+id/tv_action_sort_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有器械"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_action_info_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:layout_marginTop="15dp"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_action_info_content" />
+
+</LinearLayout>

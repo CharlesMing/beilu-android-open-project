@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Widget.AppCompat.Button.NoBorderless" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:background">@drawable/btn_borderless_mtrl</item>
+        <item name="android:foreground">@drawable/btn_borderless_mtrl</item>
+    </style>
+
+
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="android:statusBarColor">@android:color/white</item>-->
+    <!--</style>-->
+</resources>

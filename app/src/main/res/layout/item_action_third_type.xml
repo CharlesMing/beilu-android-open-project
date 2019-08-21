@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--app:cardCornerRadius="6dp"-->
+    <!--app:height_percentage="0.45"-->
+
+    <ImageView
+        android:id="@+id/iv_action_type_img"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        tools:background="#00BFA5" />
+
+    <TextView
+        android:id="@+id/tv_action_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone"
+        tools:text="训练动作" />
+
+    <ImageView
+        android:id="@+id/iv_action_type_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_publishway_true"
+        android:visibility="gone" />
+</FrameLayout>

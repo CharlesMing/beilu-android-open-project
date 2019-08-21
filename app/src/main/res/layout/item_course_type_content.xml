@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    tools:showIn="@layout/frag_course">
+
+
+    <TextView
+        android:id="@+id/tv_course_type_val"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/course_type_selector"
+        android:gravity="center"
+        android:textColor="@color/course_type_text_color"
+        android:textSize="@dimen/text_size_12"
+        tools:text="健身常识" />
+
+    <View
+        android:id="@+id/view_show_rect"
+        android:layout_width="4dp"
+        android:layout_height="19dp"
+        android:layout_gravity="center_vertical"
+        android:background="#FED230"
+        android:visibility="gone" />
+</FrameLayout>

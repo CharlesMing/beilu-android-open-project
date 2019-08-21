@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_dialog_bg_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape_dialog_white_bg"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_edit_user_info"
+            style="@style/HomePageDialogTextViewStyle"
+            android:layout_marginTop="33dp"
+            android:text="编辑资料" />
+
+        <TextView
+            android:id="@+id/tv_edit_picture"
+            style="@style/HomePageDialogTextViewStyle"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="19dp"
+            android:text="更换封面" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:background="@drawable/item_divider" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            style="@style/HomePageDialogTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@null"
+            android:foreground="@drawable/btn_borderless_mtrl"
+            android:text="取消" />
+    </LinearLayout>
+</FrameLayout>

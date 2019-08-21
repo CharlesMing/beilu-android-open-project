@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:menu="@menu/menu_add_girth"
+        app:toolbar_title="健身记录" />
+
+    <com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlEnableLoadMore="false">
+
+        <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="19dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_weight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:textColor="#FFFDBD2C"
+                                android:textSize="31sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="当前体重/斤"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_body_fat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00"
+                                android:textColor="#FFFDBD2C"
+                                android:textSize="31sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="体脂率/%"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_bone_mass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.0"
+                                android:textColor="#FFFDBD2C"
+                                android:textSize="31sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="骨量/%"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/text_size_12" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <ViewStub
+                    android:id="@+id/view_man"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout="@layout/layout_record_man" />
+
+                <ViewStub
+                    android:id="@+id/view_woman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout="@layout/layout_record_woman" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="192dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginBottom="50dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_album"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:drawableLeft="@drawable/shape_rect_orange"
+                            android:drawablePadding="5dp"
+                            android:text="健身相册"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/text_size_14"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_picture_record_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/ic_small_camera"
+                            android:foreground="@drawable/btn_borderless_mtrl"
+                            android:visibility="gone" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_fit_record_album"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/tv_album"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone"
+                            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                            app:spanCount="3"
+                            tools:listitem="@layout/item_fit_record_img" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_picture_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableTop="@drawable/ic_record_camera"
+                        android:drawablePadding="14dp"
+                        android:text="用照片记录改变！"
+                        android:textColor="#FFC7C7C7"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

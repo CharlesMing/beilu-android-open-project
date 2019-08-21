@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Toolbar.Album" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+
+    <style name="AlbumStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="toolbar">@style/Toolbar.Album</item>
+        <item name="album.dropdown.title.color">@color/album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/album_dropdown_thumbnail_placeholder</item>
+        <item name="album.emptyView">@drawable/ic_empty_zhihu</item>
+        <item name="album.emptyView.textColor">@color/album_empty_view</item>
+        <item name="item.placeholder">@color/item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">@color/item_checkCircle_backgroundColor</item>
+        <item name="item.checkCircle.borderColor">@color/item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/page_bg</item>
+        <item name="bottomToolbar.bg">@color/bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/bottom_toolbar_apply</item>
+        <item name="preview.bottomToolbar.back.textColor">@color/preview_bottom_toolbar_back_text</item>
+        <item name="preview.bottomToolbar.apply.textColor">@color/preview_bottom_toolbar_apply</item>
+        <item name="listPopupWindowStyle">@style/Popup.Album</item>
+        <item name="capture.textColor">@color/capture</item>
+    </style>
+    <style name="Popup.Album" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@color/album_popup_bg</item>
+    </style>
+
+    <style name="custom_dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="picker_view_scale_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_dialog_scale_out</item>
+    </style>
+
+
+    <style name="picker_view_slide_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pickerview_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/pickerview_slide_out_bottom</item>
+    </style>
+</resources>

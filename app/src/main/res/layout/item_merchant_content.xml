@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_merchant_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="85dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_merchant_img"
+            android:layout_width="85dp"
+            android:layout_height="105dp"
+            tools:background="@color/colorFed230" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_merchant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        tools:text="威尔士健身威尔士威尔士健身威尔士威尔士健身威尔士威尔士健身威尔士" />
+
+
+    <TextView
+        android:id="@+id/tv_merchant_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="重庆市江北区金源路66号北滨国际会客厅"
+        android:textColor="#ff999999"
+        android:textSize="12sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_merchant_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_merchant_name" />
+</android.support.constraint.ConstraintLayout>

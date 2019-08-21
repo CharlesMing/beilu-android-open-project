@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGolden">#d9c535</color>
+    <color name="colorGolden1">#f8d548</color>
+    <color name="colorLightGolden1">#fcea9c</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorLine">#ffe5e5e5</color>
+
+    <color name="colorSelected">#32B9AA</color>
+    <color name="chart_val_color">#FF3CAFF4</color>
+    <color name="GRAY">#FF999999</color>
+
+    <color name="my_album_enabled">#DFDFDF</color>
+    <color name="my_album_normal">#fed230</color>
+    <color name="action_btn_orange_color">#fed230</color>
+    <color name="action_btn_gray_color">#F4F4F4</color>
+    <color name="web_view_background_color">#3B3B3B</color>
+    <color name="colorE6E6E6">#E6E6E6</color>
+    <color name="colorF6364A">#F6364A</color>
+    <color name="colorFD9629">#FD9629</color>
+    <color name="colorECECEC">#ECECEC</color>
+    <color name="color4C4C4C">#4C4C4C</color>
+    <color name="color7F7F81">#7F7F81</color>
+    <color name="colorF5F5F5">#F5F5F5</color>
+    <color name="colorF5F6F5">#F5F6F5</color>
+    <color name="colorE4AB77">#E4AB77</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="colorFed230">#fed230</color>
+    <color name="color656565">#656565</color>
+    <color name="colorF7F7F7">#F7F7F7</color>
+    <color name="colorF9F9F9">#F9F9F9</color>
+    <color name="colorF6F6F6">#F6F6F6</color>
+    <color name="colorF2F2F2">#F2F2F2</color>
+    <color name="colorDCDCDC">#DCDCDC</color>
+    <color name="colorEEEEEE">#EEEEEE</color>
+    <color name="colorBABABA">#BABABA</color>
+    <color name="colorF8D548">#F8D548</color>
+    <color name="color5D5D5D">#5D5D5D</color>
+    <color name="color999999">#999999</color>
+</resources>

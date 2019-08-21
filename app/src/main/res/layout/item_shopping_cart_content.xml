@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="14dp">
+
+    <ImageView
+        android:id="@+id/iv_cart_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_cart_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_goods_img"
+        android:background="@drawable/shape_cart_goods_img_border"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_cart_selector"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="#6200EA" />
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_goods_img"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="女子拼色中强度运动内衣" />
+
+    <TextView
+        android:id="@+id/tv_goods_specification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_goods_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_goods_name"
+        tools:text="淡紫：条码" />
+
+    <TextView
+        android:id="@+id/tv_goods_unit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_goods_specification"
+        tools:text="¥163" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_cart_num_bg"
+        android:orientation="horizontal"
+        app:divider="@drawable/item_divider_hor"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_goods_unit_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_goods_unit_price"
+        app:showDividers="middle">
+
+        <ImageButton
+            android:id="@+id/btn_cart_minus"
+            style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cart_minus" />
+
+        <TextView
+            android:id="@+id/tv_cart_goods_num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_12" />
+
+        <ImageButton
+            android:id="@+id/btn_cart_add"
+            style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cart_add" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.constraint.ConstraintLayout>

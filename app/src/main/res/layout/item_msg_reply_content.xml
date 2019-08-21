@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/iv_comment_header"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_default_avatar" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toEndOf="@+id/iv_comment_header"
+        app:layout_constraintTop_toTopOf="@+id/iv_comment_header"
+        tools:text="华亿枫" />
+
+    <TextView
+        android:id="@+id/tv_reply_tip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorGray"
+        android:textSize="11sp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toEndOf="@+id/iv_comment_header"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_user_name"
+        tools:text="18小时前     “冷漠如我”回复了你" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mx.pro.lib">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application>
+        <activity android:name=".album.ui.AlbumActivity" />
+        <activity android:name=".album.internal.ui.AlbumPreviewActivity" />
+        <activity android:name=".album.internal.ui.SelectedPreviewActivity" />
+        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+    </application>
+</manifest>

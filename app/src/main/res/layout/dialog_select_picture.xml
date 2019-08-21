@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_dialog_bg_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_cancel"
+        android:orientation="vertical"
+        app:divider="@drawable/item_divider"
+        app:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:foreground="@drawable/btn_borderless_mtrl"
+            android:gravity="center"
+            android:text="拍照" />
+
+        <TextView
+            android:id="@+id/tv_album_select"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:foreground="@drawable/btn_borderless_mtrl"
+            android:gravity="center"
+            android:text="从相册选择" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</FrameLayout>

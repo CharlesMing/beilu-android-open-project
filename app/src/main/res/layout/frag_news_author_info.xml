@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableAutoLoadMore="true"
+        app:srlEnableRefresh="false">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="30dp">
+
+                    <ImageView
+                        android:id="@+id/iv_news_author_avatar"
+                        android:layout_width="86dp"
+                        android:layout_height="86dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="@drawable/ic_default_avatar" />
+
+                    <TextView
+                        android:id="@+id/tv_news_author_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/iv_news_author_avatar"
+                        app:layout_constraintTop_toTopOf="@+id/iv_news_author_avatar"
+                        tools:text="威尔士健身" />
+
+                    <TextView
+                        android:id="@+id/tv_news_author_fans_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@+id/tv_news_author_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_news_author_name"
+                        tools:text="800万" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="粉丝"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/text_size_12"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_news_author_fans_count"
+                        app:layout_constraintStart_toEndOf="@+id/tv_news_author_fans_count" />
+
+
+                    <TextView
+                        android:id="@+id/tv_news_author_attention_status"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/attention_selector"
+                        android:gravity="center"
+                        android:text="+ 关注"
+                        android:textColor="@color/attention_txt_color"
+                        android:textSize="13sp"
+                        android:visibility="invisible"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_news_author_fans_count"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_news_author_fans_count" />
+
+
+                    <TextView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:drawableLeft="@drawable/ic_news_author_desc"
+                        android:drawablePadding="5dp"
+                        android:text="个人描述："
+                        android:textSize="@dimen/text_size_12"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_news_author_avatar" />
+
+                    <TextView
+                        android:id="@+id/tv_news_author_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/text_size_12"
+                        app:layout_constrainedWidth="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="@+id/imageView6"
+                        tools:text="健身领域影响力最大的新媒体体体体，每天为用户健身排忧解难。" />
+                </android.support.constraint.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#F8F8F8" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/ic_findtab_indicator_selected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="文章"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_16" />
+                </FrameLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recy_author_news_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_news_content" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.mx.pro.lib.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

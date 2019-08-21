@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:srlEnableLoadMore="false">
+
+    <com.mx.pro.lib.smartrefresh.layout.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_second_type_lis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_action_second_type" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_third_type_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/action_shadow"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="9dp"
+                    android:visibility="gone"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_action_third_type" />
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_action_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:paddingLeft="9dp"
+            android:paddingTop="24dp"
+            android:paddingRight="9dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:spanCount="3"
+            tools:listitem="@layout/item_action_info_content" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_show_pay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/shape_action_pay_tips"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arm" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="想要获取动作库中的全部动作吗？"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_btn_get_action"
+                android:text="获取"
+                android:textSize="@dimen/text_size_13" />
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.mx.pro.lib.smartrefresh.layout.SmartRefreshLayout>

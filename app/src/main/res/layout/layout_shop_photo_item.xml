@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tab_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/tab_shopphoto_indicator_seletor"
+        android:drawablePadding="-6dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/tab_color_selector"
+        android:textSize="14sp"
+        tools:text="系统" />
+</LinearLayout>

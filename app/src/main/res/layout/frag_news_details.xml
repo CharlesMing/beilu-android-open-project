@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/menu_collect_share" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.scj.beilu.app.widget.NewsDetailsWebView
+            android:id="@+id/web_news_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="top"
+            android:progressDrawable="@drawable/web_progress_bar"
+            android:visibility="gone" />
+
+        <ViewStub
+            android:id="@+id/view_load_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/layout_loading_net_error" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:minHeight="52dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_comment_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_comment_edit_bg"
+            android:hint="说点什么呗~"
+            android:paddingLeft="15dp"
+            android:paddingRight="16dp"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_comment_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_find_comment"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="#aca8a8"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="visible"
+            tools:text="1002" />
+
+        <Button
+            android:id="@+id/btn_send_comment"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent"
+            android:text="发布"
+            android:textColor="@color/colorFed230"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

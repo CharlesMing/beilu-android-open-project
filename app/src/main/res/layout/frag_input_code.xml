@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.scj.beilu.app.widget.AppToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp"
+        app:toolbar_show_elevation="true"
+        app:toolbar_title="输入验证码" />
+
+
+    <TextView
+        android:id="@+id/tv_send_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/msg_send_hint"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_14" />
+
+    <EditText
+        android:id="@+id/et_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_edit_border_gray"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="12dp"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <Button
+        android:id="@+id/btn_start_verify"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_btn_bgcolor_golden"
+        android:enabled="false"
+        android:text="验证"
+        android:textColor="@color/login_text_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="@string/countdown_hint1"
+        android:textSize="@dimen/text_size_16" />
+
+    <Button
+        android:id="@+id/btn_restart_send"
+        style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="重新发送"
+        android:textColor="@color/colorGolden" />
+</LinearLayout>

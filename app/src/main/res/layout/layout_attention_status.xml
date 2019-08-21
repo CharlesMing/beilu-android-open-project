@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:id="@+id/menu_tv_news_author_attention_status"
+        style="@style/Base.Widget.AppCompat.Button.NoBorderless"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:background="@drawable/attention_selector"
+        android:gravity="center"
+        android:text="+ 关注"
+        android:textColor="@color/attention_txt_color"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</FrameLayout>

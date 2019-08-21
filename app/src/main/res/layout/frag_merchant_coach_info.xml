@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical"
+                app:divider="@drawable/item_divider"
+                app:dividerPadding="20dp"
+                app:showDividers="middle">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:paddingBottom="20dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/view_pager_merchant_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/merchant_pic_height"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:background="#4B000000" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_image_selected_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:listitem="@layout/item_img_selected" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_merchant_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/shape_circle_transparent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_merchant_smaill_img_num" />
+
+                        <TextView
+                            android:id="@+id/tv_coach_img_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp"
+                            tools:text="123" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="240dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="4dp"
+                        app:contentPaddingBottom="16dp"
+                        app:contentPaddingLeft="12dp"
+                        app:contentPaddingRight="12dp"
+                        app:contentPaddingTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <android.support.constraint.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/iv_coach_avatar"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/ic_default_avatar" />
+
+                                <TextView
+                                    android:id="@+id/tv_coach_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="20sp"
+                                    tools:text="王虎" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_coach_authentication"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="2dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:textColor="@color/color999999"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                                tools:text="AASFP高级私人教练认证" />
+
+                        </android.support.constraint.ConstraintLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="30dp"
+                        android:text="教练介绍"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+                    <TextView
+                        android:id="@+id/tv_coach_info_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:lineSpacingMultiplier="1.3"
+                        android:textColor="@color/color999999"
+                        android:textSize="@dimen/text_size_14"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14"
+                        tools:text="20多年来的打造，已让众多人士成为了粉丝，也让诸多人尝试着踏入健身的行列。Will's致力于成为社区性Will's已将会所铺设到不少生活社区附近。" />
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_advantage_course_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/white"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="4" />
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="资质认证"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_authentication"
+                        android:layout_width="130dp"
+                        android:layout_height="105dp"
+                        android:layout_marginTop="22dp"
+                        app:layout_constraintStart_toStartOf="@+id/textView15"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15"
+                        tools:background="#00B8D4" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_coach_authentication_val"-->
+                    <!--android:layout_width="130dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:lineSpacingMultiplier="1.2"-->
+                    <!--android:paddingLeft="16dp"-->
+                    <!--android:paddingRight="16dp"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="@dimen/text_size_12"-->
+                    <!--app:layout_constraintEnd_toEndOf="@+id/iv_authentication"-->
+                    <!--app:layout_constraintStart_toStartOf="@+id/iv_authentication"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/iv_authentication"-->
+                    <!--tools:text="CBBA中国健美协会认证CBBA中国健美协会认证" />-->
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:elevation="0dp">
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <com.scj.beilu.app.widget.AppToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="@drawable/ic_back_white"
+                app:showBack="false"
+                app:toolbar_background="@android:color/transparent"
+                app:toolbar_title=" " />
+        </android.support.design.widget.AppBarLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        app:cardElevation="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_consult"
+            android:layout_width="118dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_seller_consult"
+            android:gravity="center"
+            android:text="立即咨询"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

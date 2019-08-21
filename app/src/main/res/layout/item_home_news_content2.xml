@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="3"
+            android:text="欢迎瑞秋女神归队！不负众线杀了,前阵子97年的中国妹子用腹肌、翘臀"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日经济新闻 .  10283次阅读"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="101dp"
+        android:layout_height="75dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/colorGray" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
