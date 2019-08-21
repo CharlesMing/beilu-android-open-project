@@ -1,5 +1,5 @@
-# 北鹿运动 Android
-一个完整的MVP模式开发的Android项目，由于服务器接口已停止维护。
+# 北鹿运动 一个完整的Android APP
+
 # 如何使用？
 	1.clone项目到本地，使用Android Studio打开，编译运行
 	2.由于后台接口已停止运营，需自行添加模拟数据
