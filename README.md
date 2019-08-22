@@ -1,4 +1,6 @@
 # 北鹿运动 一个完整的Android APP
+# 效果图  （部分截图 [[点我查看]](https://github.com/CharlesMing/BeiluForAndroid/tree/master/images)  ）
+![image](https://github.com/CharlesMing/BeiluForAndroid/blob/master/images/%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.png)
 
 # 如何使用？
 	1.clone项目到本地，使用Android Studio打开，编译运行
