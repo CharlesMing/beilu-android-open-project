@@ -1,11 +1,11 @@
-# 北鹿运动 一个完整的Android APP
-# 功能结构  （部分截图 [[点我查看]](https://github.com/CharlesMing/BeiluForAndroid/tree/master/images)  ）
+# 北鹿运动 一个较完整的Android APP
+# 功能结构  （APP截图 [[点我查看]](https://github.com/CharlesMing/BeiluForAndroid/tree/master/images)  ）
 ![image](https://raw.githubusercontent.com/CharlesMing/beilu-android-open-project/master/images/%E5%8C%97%E9%B9%BF%E8%BF%90%E5%8A%A8.png)
 
 # 如何使用？
-	1.clone项目到本地，使用Android Studio打开，编译运行
-	2.由于后台接口已停止运营，需自行添加模拟数据
-	3.如需查看UI设计，请添加下方QQ联系
+	1.clone项目到本地，使用Android Studio打开，删除build.gradle签名信息编译运行
+	2.后端接口已停止运营，需自行添加模拟数据
+	
 # 项目结构
 	mpchartlib--------统计图
 	prolib----------第三方库集成，如：Fragmentation、Mosby(MVP)、Banner
@@ -20,7 +20,11 @@
 	6. 健身记录
 	7. 动态（类似微博）
 	8. 其他....
+# 其他
+	此源码仅用于学习交流使用
 
-# QQ： 704426768
-# 更多介绍，百度搜： 北鹿APP
-	
+## 非常感谢您的支持
+
+
+#### 撸码不易，如果对你有所帮助，欢迎您的赞赏
+https://i.loli.net/2020/12/17/Ff63spLQuHEZ5tU.jpg
