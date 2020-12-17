@@ -28,4 +28,5 @@
 
 #### 撸码不易，如果对你有所帮助，欢迎您的赞赏
 <img src="https://github.com/CharlesMing/lib/blob/main/eeemm_facetoface_collect_qrcode_1608185226029.png" width="224px" height="307px"/>
+<img src="https://github.com/CharlesMing/lib/blob/main/eeeqrcode_20201217140752.png" width="224px" height="307px"/>
 
